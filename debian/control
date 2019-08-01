@@ -1,0 +1,12 @@
+Source: ros-melodic-tts
+Section: misc
+Priority: extra
+Maintainer: AWS RoboMaker <ros-contributions@amazon.com>
+Build-Depends: debhelper (>= 9.0.0), python-boto3, python-mock, ros-melodic-actionlib-msgs, ros-melodic-catkin, ros-melodic-message-generation, ros-melodic-rospy, ros-melodic-rostest, ros-melodic-rosunit, ros-melodic-sound-play, ros-melodic-std-msgs
+Homepage: http://wiki.ros.org/tts
+Standards-Version: 3.9.2
+
+Package: ros-melodic-tts
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-boto3, ros-melodic-actionlib-msgs, ros-melodic-message-runtime, ros-melodic-rospy, ros-melodic-sound-play, ros-melodic-std-msgs
+Description: Package enabling a robot to speak with a human voice by providing a Text-To-Speech ROS service
