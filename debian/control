@@ -1,0 +1,12 @@
+Source: ros-dashing-tts
+Section: misc
+Priority: extra
+Maintainer: AWS RoboMaker <ros-contributions@amazon.com>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest, ros-dashing-ament-pep257, ros-dashing-launch, ros-dashing-launch-testing, ros-dashing-ros-workspace, python3-all, python3-setuptools
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-dashing-tts
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, python3-boto3, ros-dashing-launch, ros-dashing-launch-ros, ros-dashing-rclpy, ros-dashing-std-msgs, ros-dashing-tts-interfaces, ros-dashing-ros-workspace
+Description: Package enabling a robot to speak with a human voice by providing a Text-To-Speech ROS service
