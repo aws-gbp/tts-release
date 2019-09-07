@@ -1,3 +1,28 @@
+## tts (dashing) - 2.0.0-1
+
+The packages in the `tts` repository were released into the `dashing` distro by running `/home/ANT.AMAZON.COM/miaofei/.local/bin/bloom-release tts --track dashing --rosdistro dashing -e` on `Sat, 07 Sep 2019 00:13:28 -0000`
+
+These packages were released:
+- `tts`
+- `tts_interfaces`
+
+Version of package(s) in repository `tts`:
+
+- upstream repository: https://github.com/aws-robotics/tts-ros2.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `2.0.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.8.0`
+- catkin_pkg version: `0.4.13`
+- rosdep version: `0.15.2`
+- rosdistro version: `0.7.4`
+- vcstools version: `0.1.42`
+
+
 ## tts (melodic) - 1.0.2-1
 
 The packages in the `tts` repository were released into the `melodic` distro by running `/usr/bin/bloom-release tts --track melodic --rosdistro melodic -e` on `Thu, 01 Aug 2019 21:18:52 -0000`
