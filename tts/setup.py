@@ -1,33 +1,44 @@
-# Copyright (c) 2018, Amazon.com, Inc. or its affiliates. All Rights Reserved.
-#
-# Licensed under the Apache License, Version 2.0 (the "License").
-# You may not use this file except in compliance with the License.
-# A copy of the License is located at
-#
-#  http://aws.amazon.com/apache2.0
-#
-# or in the "license" file accompanying this file. This file is distributed
-# on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
-# express or implied. See the License for the specific language governing
-# permissions and limitations under the License.
+from setuptools import find_packages
+from setuptools import setup
 
-import os
-from distutils.core import setup
-from catkin_pkg.python_setup import generate_distutils_setup
+package_name = 'tts'
 
-
-# ROS PACKAGING
-# using distutils : https://docs.python.org/2/distutils
-# fetch values from package.xml
-setup_args = generate_distutils_setup(
-    packages=[
-        'tts',
+setup(
+    name=package_name,
+    version='1.0.0',
+    packages=find_packages(exclude=['test']),
+    data_files=[
+        ('share/ament_index/resource_index/packages',
+            ['resource/' + package_name]),
+        ('share/' + package_name,
+            ['package.xml', 'launch/tts.launch.py']),
     ],
-    package_dir={
-        '': 'src',
-    },
     package_data={
-        '': ['data/*.ogg', 'data/models/polly/2016-06-10/*.json']
+        'tts': ['services/data/models/polly/2016-06-10/*.json', 'services/data/*.ogg'],
+    },
+    install_requires=['setuptools'],
+    zip_safe=True,
+    author='RoboMaker',
+    author_email='ros-contributions@amazon.com',
+    maintainer='RoboMaker',
+    maintainer_email='ros-contributions@amazon.com',
+    keywords=['ROS'],
+    classifiers=[
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: Apache Software License',
+        'Programming Language :: Python',
+        'Topic :: Software Development',
+    ],
+    description=(
+        'TTS'
+    ),
+    license='Apache License, Version 2.0',
+    tests_require=['pytest'],
+    entry_points={
+        'console_scripts': [
+            'polly_server = tts.services.amazonpolly:main',
+            'synthesizer_server = tts.services.synthesizer:main',
+            'voicer = tts.voicer:main',
+        ],
     },
 )
-setup(**setup_args)

@@ -1,5 +1,6 @@
-# tts
+# TTS ROS2
 
+**Note: this repository is under active development. The package provided here is a release candidate; the API may change without notice and no support is provided for it at the moment.**
 
 ## Overview
 The `tts` ROS node enables a robot to speak with a human voice by providing a Text-To-Speech service.
@@ -21,17 +22,14 @@ The source code is released under an [Apache 2.0].
 **Maintainer**: AWS RoboMaker, ros-contributions@amazon.com
 
 ### Supported ROS Distributions
-- Kinetic
-- Melodic
+- Dashing
 
 ### Build status
 * Travis CI:
-    * "master" branch [![Build Status](https://travis-ci.org/aws-robotics/tts-ros1.svg?branch=master)](https://travis-ci.org/aws-robotics/tts-ros1/branches)
-    * "release-latest" branch [![Build Status](https://travis-ci.org/aws-robotics/tts-ros1.svg?branch=release-latest)](https://travis-ci.org/aws-robotics/tts-ros1/branches)
+    * "master" branch [![Build Status](https://travis-ci.org/aws-robotics/tts-ros2.svg?branch=master)](https://travis-ci.org/aws-robotics/tts-ros2/branches)
+    * "release-latest" branch [![Build Status](https://travis-ci.org/aws-robotics/tts-ros2.svg?branch=release-latest)](https://travis-ci.org/aws-robotics/tts-ros2/branches)
 * ROS build farm:
-    * ROS Kinetic @ u16.04 Xenial [![Build Status](http://build.ros.org/job/Kbin_uX64__tts__ubuntu_xenial_amd64__binary/badge/icon)](http://build.ros.org/job/Kbin_uX64__tts__ubuntu_xenial_amd64__binary)
-    * ROS Melodic @ u18.04 Bionic [![Build Status](http://build.ros.org/job/Mbin_uB64__tts__ubuntu_bionic_amd64__binary/badge/icon)](http://build.ros.org/job/Mbin_uB64__tts__ubuntu_bionic_amd64__binary)
-
+    * Unreleased
 
 ## Installation
 
@@ -65,7 +63,7 @@ To build from source you'll need to create a new workspace, clone and checkout t
 - Clone the package into the source directory . 
 
         cd ~/ros-workspace/src
-        git clone https://github.com/aws-robotics/tts-ros1.git -b release-latest
+        git clone https://github.com/aws-robotics/tts-ros2.git -b release-latest
 
 - Install dependencies
 
@@ -253,7 +251,7 @@ Please report bugs in [Issue Tracker].
 [Amazon Polly documentation]: https://docs.aws.amazon.com/polly/latest/dg/what-is.html
 [Amazon Web Services (AWS)]: https://aws.amazon.com/
 [Apache 2.0]: https://aws.amazon.com/apache-2-0/
-[Issue Tracker]: https://github.com/aws-robotics/tts-ros1/issues
+[Issue Tracker]: https://github.com/aws-robotics/tts-ros2/issues
 [PulseAudio Documentation]: https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/
 [official Amazon Polly document]: https://docs.aws.amazon.com/polly/latest/dg/voicelist.html
 [sample ROS application]: https://github.com/aws-robotics/aws-robomaker-sample-application-voiceinteraction

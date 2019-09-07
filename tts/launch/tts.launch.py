@@ -1,6 +1,4 @@
-#!/usr/bin/env python
-
-# Copyright (c) 2018, Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License").
 # You may not use this file except in compliance with the License.
@@ -14,6 +12,16 @@
 # permissions and limitations under the License.
 
 
-if __name__ == "__main__":
-    import tts.synthesizer
-    tts.synthesizer.main()
+from launch import LaunchDescription
+from launch_ros.actions import Node
+
+
+def generate_launch_description():
+    return LaunchDescription([
+        Node(package='tts',
+             node_executable='polly_server',
+             output='screen'),
+        Node(package='tts',
+             node_executable='synthesizer_server',
+             output='screen'),
+    ])

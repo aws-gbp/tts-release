@@ -2,30 +2,15 @@
 Changelog for package tts
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.0.1 (2019-03-20)
+2.0.0 (2019-09-06)
 ------------------
-* Merge pull request `#2 <https://github.com/aws-robotics/tts-ros1/issues/2>`_ from yyu/fix
-  no assert_called() for older versions of mock
-* no assert_called() for older versions of mock
-* remove rostest from top level find_package (`#1 <https://github.com/aws-robotics/tts-ros1/issues/1>`_)
-  It's conditionally found in the testing section only so it's only a test_depend
-* Contributors: Tully Foote, Yuan "Forrest" Yu, y²
-
-1.0.2 (2019-08-01)
-------------------
-* update changelog to be compatible with catkin_generate_changelog (`#28 <https://github.com/aws-robotics/tts-ros1/issues/28>`_)
-  Signed-off-by: y² <forresty@amazon.com>
-* increment patch version (`#27 <https://github.com/aws-robotics/tts-ros1/issues/27>`_)
-  Signed-off-by: y² <forresty@amazon.com>
-* Release 1.0.1 (`#9 <https://github.com/aws-robotics/tts-ros1/issues/9>`_)
-  * Release 1.0.1
-  * 1.0.1
-* Merge pull request `#2 <https://github.com/aws-robotics/tts-ros1/issues/2>`_ from yyu/fix
-  no assert_called() for older versions of mock
-* no assert_called() for older versions of mock
-* remove rostest from top level find_package (`#1 <https://github.com/aws-robotics/tts-ros1/issues/1>`_)
-  It's conditionally found in the testing section only so it's only a test_depend
-* Contributors: AAlon, M. M, Tully Foote, Yuan "Forrest" Yu, y²
-
-1.0.0 (2019-03-20)
-------------------
+* Delete CHANGELOG.rst
+* Bump version to 2.0.0 and add changelog
+* Add launch dependencies
+* Rename python-boto3 to python3-boto3 in package.xml
+* Fix imports in tests
+* Fix integration test and add graceful shutdown of the server nodes.
+* Merge pull request `#1 <https://github.com/aws-robotics/tts-ros2/issues/1>`_ from aws-robotics/dev
+  initial commit for tts-ros2
+* initial commit for tts-ros2
+* Contributors: AAlon, Avishay Alon, Yuan "Forrest" Yu, y²
