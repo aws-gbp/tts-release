@@ -5,7 +5,7 @@ package_name = 'tts'
 
 setup(
     name=package_name,
-    version='2.0.1',
+    version='2.0.2',
     packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages',
@@ -38,7 +38,7 @@ setup(
         'console_scripts': [
             'polly_server = tts.services.amazonpolly:main',
             'synthesizer_server = tts.services.synthesizer:main',
-            'voicer = tts.voicer:main',
+            'voicer = tts.scripts.voicer:main',
         ],
     },
 )
