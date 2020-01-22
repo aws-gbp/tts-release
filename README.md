@@ -1,3 +1,28 @@
+## tts (dashing) - 2.0.2-1
+
+The packages in the `tts` repository were released into the `dashing` distro by running `/usr/local/bin/bloom-release tts --track dashing --rosdistro dashing -e` on `Wed, 22 Jan 2020 22:43:50 -0000`
+
+These packages were released:
+- `tts`
+- `tts_interfaces`
+
+Version of package(s) in repository `tts`:
+
+- upstream repository: https://github.com/aws-robotics/tts-ros2.git
+- release repository: https://github.com/aws-gbp/tts-release.git
+- rosdistro version: `2.0.1-1`
+- old version: `2.0.1-1`
+- new version: `2.0.2-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.0`
+- catkin_pkg version: `0.4.9`
+- rosdep version: `0.15.1`
+- rosdistro version: `0.8.0`
+- vcstools version: `0.1.40`
+
+
 ## tts (dashing) - 2.0.1-1
 
 The packages in the `tts` repository were released into the `dashing` distro by running `/usr/local/bin/bloom-release tts --track dashing --rosdistro dashing -e` on `Fri, 20 Sep 2019 07:01:55 -0000`
